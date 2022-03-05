@@ -1,8 +1,9 @@
 <template>
   <v-app>
-    <h1>Translate</h1>
-    <Button text="toggle theme" @click="$emit('toggleTheme')" />
-    <Button text="translate" />
+    <v-app-bar elevation="4" class="justify-center">
+      <Button text="toggle theme" @click="$emit('toggleTheme')" />
+      <h1>Translate</h1>
+    </v-app-bar>
   </v-app>
 </template>
 
@@ -16,9 +17,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-h1 {
-  text-align: center;
-}
-</style>

@@ -1,31 +1,19 @@
 <template>
-  <v-app :theme="theme">
+  <v-app>
     <v-main>
-      <Header @toggleTheme="toggleTheme" />
+      <Layout />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-
-import { ref } from "vue";
+import Layout from "./components/Layout.vue";
 
 export default {
   name: "App",
 
   components: {
-    Header,
-  },
-
-  setup() {
-    const theme = ref("light");
-
-    return {
-      theme,
-      toggleTheme: () =>
-        (theme.value = theme.value === "light" ? "dark" : "light"),
-    };
+    Layout,
   },
 };
 </script>
