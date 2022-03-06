@@ -1,12 +1,14 @@
 <template>
-  <v-layout :theme="theme">
-    <v-app-bar>
-      <Header />
-    </v-app-bar>
-    <v-main>
-      <Main @toggleTheme="toggleTheme" />
-    </v-main>
-  </v-layout>
+  <v-app :theme="theme">
+    <v-layout>
+      <v-app-bar>
+        <Header />
+      </v-app-bar>
+      <v-main>
+        <Main @toggleTheme="toggleTheme" />
+      </v-main>
+    </v-layout>
+  </v-app>
 </template>
 
 <script>

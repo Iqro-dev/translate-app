@@ -1,8 +1,6 @@
 <template>
   <v-app>
-    <v-main>
-      <Layout />
-    </v-main>
+    <Layout />
   </v-app>
 </template>
 
