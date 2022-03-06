@@ -1,19 +1,10 @@
 <template>
-  <v-app>
-    <v-app-bar elevation="4" class="justify-center">
-      <Button text="toggle theme" @click="$emit('toggleTheme')" />
-      <h1>Translate</h1>
-    </v-app-bar>
-  </v-app>
+  <v-app-bar-nav-icon></v-app-bar-nav-icon>
+  <h1>Translate</h1>
 </template>
 
 <script>
-import Button from "./Button.vue";
-
 export default {
   name: "Header",
-  components: {
-    Button,
-  },
 };
 </script>

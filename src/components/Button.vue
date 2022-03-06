@@ -1,7 +1,5 @@
 <template>
-  <v-app>
-    <v-btn>{{ text }}</v-btn>
-  </v-app>
+  <v-btn class="align-center justify-space-around ma-5">{{ text }}</v-btn>
 </template>
 
 <script>
