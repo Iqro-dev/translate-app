@@ -15,11 +15,11 @@
         </v-col>
         <v-col cols="12" sm="6">
           <v-text-field
-            :label="[text ? text : 'Text will appear here...']"
+            :label="this.text ? this.text : 'Text will appear here...'"
             clearable
             variant="contained"
             class="pa-10"
-            disabled="true"
+            disabled
           ></v-text-field>
         </v-col>
       </v-row>
@@ -35,6 +35,7 @@ export default {
   components: {
     Button,
   },
+  emits: ["toggleTheme"],
   data() {
     return {
       text: "",
